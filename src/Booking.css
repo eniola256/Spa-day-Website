@@ -1,0 +1,161 @@
+/* Booking Heading */
+.book-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.book-heading h1{
+    font-size: 40px;
+}
+.book-heading p{
+    font-size: 20px;
+}
+
+.Booking-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.booking-all {
+  background-color: #fffbc3;
+  padding: 30px;
+  display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 40px;
+  max-width: 50rem;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.date-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+
+}
+
+.ind-time{
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    background: #fffde1;
+    border: #8f8a7c 1px solid;
+    padding: 5px;
+}
+
+.ind-time:hover{
+    background:#fffbc3 ;
+}
+
+.book-time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-time p{
+    font-size: 30px;
+}
+
+.field label{
+    font-size: 20px;
+}
+
+.field input{
+    width: 100%;
+    height: 35px;
+    border-radius: 6px;
+    background: #fffde1;
+    border: #8f8a7c 1px solid;
+    padding: 10px 5px;
+    font-size: 15px;
+}
+
+.time-list {
+  max-height: 300px;   /* sets visible height */
+  overflow-y: auto;    /* enables vertical scroll only for time list */
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.time-list::-webkit-scrollbar {
+  width: 6px;
+}
+.time-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.time-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Book-main a{ 
+  color: black; 
+} 
+
+.Book-main .nav-items a::after{
+    background-color:#9b7a10 ;
+}
+
+.book-heading p{
+    color: #6C5C51;
+    padding:  5px 10rem;
+    text-align: center;
+}
+.book-heading h1{
+    color: #9b7a10;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.Book-main .menu-icon,
+.Book-main .logo{
+    color: black;
+}
+
+/* Small Screens */
+
+@media( max-width: 800px){
+   .booking-all{
+    display: flex;
+    flex-direction: column;
+   }
+   .book-heading h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.book-heading p{
+    padding: 0 20px;
+    font-size: 15px;
+}
+}
+@media( max-width: 450px){
+.book-heading h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.book-heading p{
+    font-size: 12px;
+}
+
+.booking-all{
+    display: flex;
+    flex-direction: column;
+}
+.book-time{
+    width: 100%;
+}
+.time-list{
+    max-height: 150px;
+    width: 100%;
+}
+.ind-time{
+    width: 100%;
+}
+}

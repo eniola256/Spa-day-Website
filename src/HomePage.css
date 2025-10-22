@@ -1,0 +1,480 @@
+.Body {
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+    background: #fffde1;
+}
+
+.main {
+  background: url("/spaHome.jpg") no-repeat center center/cover;
+  background-color: rgba(70, 55, 6, 0.35);
+  background-blend-mode: overlay;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ========== HOME SECTION ========== */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 80px;
+  color: #fff1e0;
+}
+
+.home .topbar{
+    color: #fff1e0;
+}
+
+.home-p1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home h2 {
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+.home-p2 {
+  font-size: 2rem;
+}
+
+/* ========== WELCOME SECTION ========== */
+.welcome-msg{
+  padding: 30px;
+}
+.all-msg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 450px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background: #fffbc3;
+}
+
+
+.welcome-msg2 {
+  display: none;
+}
+
+.welcome-msg-txt {
+  flex-basis: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 23px;
+  padding: 20px;
+  height: auto;
+}
+
+.welcome-msg-txt h3 {
+  font-size: 2.7rem;
+  color: #9b7a10;
+  font-weight: 100;
+}
+
+.welcome-msg-txt p {
+  font-size: 1.3rem;
+  color: #6C5C51;
+}
+
+.welcome-msg-img {
+  flex-basis: 40%;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.all-msg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: 0.2px solid rgb(233, 233, 233);
+  border-radius: 10px;
+}
+.message-btn {
+  width: 10rem;
+  padding: 10px;
+  background-color: #c49c1b;
+  color: white;
+  border: 1px solid transparent; /* keeps space */
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px black;
+  transition: border 0.2s ease-in-out;
+  cursor: pointer;
+}
+.message-btn a{
+  color: #fdfcfc;
+  text-decoration: none;
+}
+.message-btn:hover {
+  border: 1px solid #fdfcfc;
+}
+.message-btn:active{
+  border-color: transparent;
+  box-shadow: none;
+}
+/* ========== ACCOMMODATIONS SECTION ========== */
+.accomodations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 20px;
+  height: auto;
+}
+
+.accomodations h3 {
+  font-size: 5rem;
+  color: #9b7a10;
+}
+
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.room {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #fffbc3;
+  padding: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.room img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+.room-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 2rem;
+}
+
+.room-up-txt {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.room p{
+    color: #6C5C51;
+}
+
+.room-down-txt h4 {
+  font-size: 40px;
+}
+.extra{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: auto;
+    padding-top: 30px;
+}
+.extra-left{
+    flex-basis: 30%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.extra-right{
+    flex-basis: 70%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+.extra img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.extra p{
+    border: 1px solid #a52a2a ;
+    padding: 5px;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== CONTACT SECTION ========== */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: rgb(218, 128, 54);
+  padding: 5rem;
+  color: #fff1e0;
+}
+
+.contact h2 {
+  font-size: 5rem;
+}
+
+.contact-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  height: 220px;
+}
+
+.contact-info {
+  flex-basis: 50%;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+}
+
+.contact-info p {
+  font-size: 19px;
+}
+
+.contact-info .location {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  padding-right: 2px;
+  font-size: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+}
+
+.contact-icon {
+  font-size: 30px;
+}
+
+.contact-btn {
+  background: none;
+  border: 1px solid white;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  .home h2 {
+    font-size: 5rem;
+  }
+
+  .home {
+    align-items: center;
+  }
+
+  .welcome-msg {
+    display: none;
+  }
+
+  .welcome-msg2 {
+    display: flex;
+    padding: 30px;
+  }
+
+  .welcome-msg2 h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .welcome-msg-txt p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .welcome-msg2 .all-msg{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .welcome-msg2 img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .contact {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .contact-infos {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+  }
+    .accomodations h3{
+    font-size: 3rem;
+  }
+  .rooms{
+    flex-direction: column;
+  }
+  .room{
+    gap: 8px;
+  }
+  .room-txt{
+    padding: 9px;
+    gap: 17px;
+  }
+  .room-up-txt {
+  font-size: 18px;
+  font-weight: 600;
+}
+.room-down-txt h4 {
+  font-size: 35px;
+}
+/* EXTRA */
+.extra{
+    gap: 10px;
+    flex-direction: column;
+}
+.extra-left{
+    flex-basis: 35%;
+}
+.extra-right{
+    flex-basis: 65%;
+}
+.extra img{
+    height: 200px;
+}
+.extra p{
+    padding: 30px;
+}
+}
+
+@media (max-width: 400px) {
+  .home h2 {
+    font-size: 3rem;
+  }
+
+  .home {
+    align-items: center;
+  }
+
+  .welcome-msg {
+    display: none;
+  }
+
+  .welcome-msg2 {
+    display: block;
+    width: 100%;
+  }
+
+  .welcome-msg2 h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .welcome-msg-txt p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contact-infos {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    padding: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  /* ACCOMODATION */
+
+}
+
+/* ======== ANIMATIONS ========= */
+/* Home Animation */
+.slide-top {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Welcome animation */
+
+
+.welcome-msg-txt.slide-bottom {
+  transition: transform 0.5s ease-in-out; /* controls speed + easing */
+}
+
+.welcome-msg-txt.slide-bottom:hover {
+  transform: translateY(10px); /* how far it moves down */
+}

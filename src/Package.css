@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.packages{ 
+  background:#fffde1 ; 
+  padding-bottom: 40px;
+} 
+
+.packages-main{ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 10px; 
+} 
+
+.packages a{ 
+  color: black; 
+} 
+
+.packages-main h3{ 
+  font-size: 70px; 
+} 
+
+.all-pack{
+  display: flex;
+  max-width: 67rem;
+  height: auto;
+  overflow-x: auto;
+  justify-content: space-between;
+  padding: 30px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.all-pack::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.bundle{
+  flex: 1 0 100%;
+  display: flex;
+  gap: 20px;
+  scroll-snap-align: start;
+  padding: 10px;
+}
+
+.bundle-names{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  border-radius: 30px;
+  padding: 7px;
+}
+
+.bundle-names a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.pack { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-end; 
+  height: 390px; 
+  width: 340px; 
+  border-radius: 10px; 
+  background: url(./room2.jpg) center/cover no-repeat; 
+  background-color: rgba(0, 0, 0, 0.527); 
+  background-blend-mode: overlay; 
+  position: relative; 
+  box-shadow: 1px 1px 10px; 
+  overflow: hidden; /* makes overlay stay inside */ 
+} 
+
+/* overlay (slides up) */ 
+.info { 
+  position: absolute; 
+  bottom: -100%; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgb(255, 251, 195); 
+  color: #9b7a10; 
+  display: none; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 15px; 
+  transition: bottom 0.4s ease; 
+  text-align: center; 
+  gap: 10px; 
+} 
+
+.pack:hover .info { 
+  bottom: 0; 
+  z-index: 999; 
+} 
+
+.gold-bundle{ 
+  border: 1px solid rgb(218, 165, 32); 
+  transition: .2s ease; 
+} 
+
+.gold-bundle:hover{ 
+  box-shadow: 1px 1px 12px rgb(218, 165, 32); 
+} 
+
+.platinum-bundle{ 
+  border: 1px solid rgb(160, 159, 159); 
+  transition: .2s ease; 
+} 
+
+.platinum-bundle:hover{ 
+  box-shadow: 1px 1px 12px rgb(160, 159, 159); 
+} 
+
+.pack-info { 
+  color: white; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  font-size: 20px; 
+  background-color: rgba(7, 7, 7, 0.589); 
+  width: 100%; 
+  border-radius: 0 0 8px 8px; 
+  padding: 8px; 
+  line-height: 1.3; 
+} 
+
+.pack-info h3{ 
+  font-size: 22px; 
+} 
+
+.pack-info p{ 
+  font-size: 14px; 
+} 
+
+.diamond-bundle{ 
+  border: 1px solid rgb(255, 4, 255); 
+  transition: .2s ease; 
+} 
+
+.diamond-bundle:hover{ 
+  box-shadow: 1px 1px 12px rgba(255, 4, 255, 0.938); 
+}
+
+.mobile-pack{
+  display: none;
+}
+
+.link-text{
+  display: none;
+}
+.mobile-pack{
+  display: none;
+}
+@media (max-width: 450px) {
+  .all-pack{
+    display: none;
+  }
+  .packages-main h3{
+    font-size: 20px;
+  }
+.mobile-pack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/* No overflow here anymore */
+.mobile-pack-bundle {
+  display: flex;
+  width: 20rem;
+  height: auto;
+  justify-content: center;
+
+}
+
+/* Scroll only the packs inside each bundle */
+.mobile-pack .bundle {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+.pack {
+  width: 70px;
+  flex: 1 0 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.bundle-names {
+  display: none;
+}
+
+.names {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px 0;
+  padding: 0;
+}
+
+.diamond-names a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #df13a2;
+  display: inline-block;          /* ✅ ensures visible circular dots */
+}
+.platinum-names a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddcad7;
+  display: inline-block;          /* ✅ ensures visible circular dots */
+}
+.gold-names a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dfc113;
+  display: inline-block;          /* ✅ ensures visible circular dots */
+}
+}
