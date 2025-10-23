@@ -4,10 +4,6 @@
     border-radius: 10px solid #eee;
 }
 
-.date-picker-container{
-
-}
-
 .date-picker{
 
     z-index: 100;
@@ -31,8 +27,8 @@
 .dates{
     display: grid;
     grid-template-columns: repeat(7, 32px);
-    gap: 10px
-    ;margin-block: 10px;
+    gap: 10px;
+    margin-block: 10px;
 }
 
 .days span{
