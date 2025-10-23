@@ -68,7 +68,11 @@ html {
   height: 390px; 
   width: 340px; 
   border-radius: 10px; 
+<<<<<<< HEAD
   background: url("/room2.jpg") center/cover no-repeat; 
+=======
+  background: url(./room2.jpg) cover no-repeat; 
+>>>>>>> 6bb6d965feafcf5d46db92197de1349c5d99e0ba
   background-color: rgba(0, 0, 0, 0.527); 
   background-blend-mode: overlay; 
   position: relative; 
