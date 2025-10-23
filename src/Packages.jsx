@@ -1,7 +1,11 @@
 import NavBar from "./NavBar.jsx"
 import "./Package.css"
 import { useRef, useEffect,  } from "react"
+
 function Packages(){
+
+  
+
     return(<>
 <div className="packages">
       <NavBar />
@@ -181,7 +185,7 @@ function Packages(){
   {/* Diamond */}
   <div className="mobile-pack-bundle">
     <div className="bundle diamond" id="Diamond">
-      <div className="pack pack1 diamond-bundle " id="d1">
+      <div className="pack pack1 diamond-bundle  " id="d1" >
         <div className="info">
           <p>2hr signature massage therapy</p>
           <p>24K gold facial treatment</p>
