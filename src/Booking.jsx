@@ -1,7 +1,25 @@
 import NavBar from "./NavBar.jsx"
 import "./Booking.css"
 import Calender from "./Calender.jsx";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 function Booking() {
+
+
+    const [selectedPack, setSelectedPack] = useState("")
+    const [showPacks, setShowPacks] = useState(false); // ✅ Add this!
+
+
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.state?.pack) {
+    setSelectedPack(location.state.pack);
+    setShowPacks(false); // keeps dropdown closed
+  }
+}, [location]);
+
   return (
     <>
       <div className="Book-main">
@@ -28,13 +46,27 @@ function Booking() {
               <input type="number" placeholder="max:4" />
             </div>
 
-            <div className="field"> 
-              <label>Package</label><br />
-              <select name="Package">
-                <option>Pack1</option>
-                <option>Pack2</option>
-                <option>Pack3</option>
-              </select>
+            <div className="pack-picker"> 
+              <div className="pack-text">
+              <label>Package</label>
+              <input
+                type="text"
+                value={selectedPack}
+                readOnly
+                onClick={() => setShowPacks(!showPacks)}
+              />
+              </div>
+              <div className="pack-buttons" style={{ display: showPacks ? "flex" : "none" }}>
+                {["Pack 1","Pack 2","Pack 3","Pack 4","Pack 5","Pack 6","Pack 7","Pack 8","Pack 9"]
+                  .map((p,i)=>(
+                    <button key={i} onClick={()=>{
+                      setSelectedPack(p);
+                      setShowPacks(false);
+                    }}>
+                      {p}
+                    </button>
+                ))}
+              </div>
             </div>
 
         <div className="book-time">
