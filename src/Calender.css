@@ -58,13 +58,18 @@
     color: mediumpurple;
 }
 .dates button.selected{
-    background: mediumpurple;
+    background:  #9b7a10;
     color: #fff;
 }
 
 .dates button:hover {
-    background: mediumpurple;
+    background: #daba53 ;
     color: #fff;
+}
+
+.cancel{
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    left: 20rem;
 }
 
 .date-picker-header{
@@ -105,6 +110,8 @@
 }
 
 .date-picker-footer button.apply{
-    background: mediumpurple;
+    background: #9b7a10;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    left: 20rem;
     color: #fff;
 }
