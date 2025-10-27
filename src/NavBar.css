@@ -12,17 +12,7 @@
 .logo{
   font-size: 4rem;
 }
-.rotate{
-   animation: AutoRotate 4s linear 1;
-}
-@keyframes AutoRotate{
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
+
 
 .logo a{
   text-decoration: none;

@@ -15,12 +15,19 @@ html {
   gap: 10px; 
 } 
 
+.packages .nav-items a::after{
+    background-color:#9b7a10 ;
+}
+
 .packages a{ 
   color: black; 
 } 
-
-.packages-main h3{ 
-  font-size: 70px; 
+.packages .logo a{ 
+  color: #9b7a10; 
+} 
+.head{ 
+  font-size: 90px; 
+  color: #9b7a10;
 } 
 
 .all-pack{
@@ -158,7 +165,17 @@ html {
   border-radius: 0 0 8px 8px; 
   padding: 8px; 
   line-height: 1.3; 
+  display: flex;
+  gap: 100px;
 } 
+
+.pack-price{
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 47px;
+  
+}
 
 
 
@@ -182,6 +199,7 @@ html {
   border: #9b7a10;
   color: black;
 }
+
 
 
 .pack-info p{ 
@@ -211,15 +229,21 @@ html {
   .all-pack{
     display: none;
   }
-  .packages-main h3{
-    font-size: 20px;
-  }
+
 .mobile-pack {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   align-items: center;
+}
+
+.packages .logo{ 
+  color: #9b7a10; 
+} 
+
+.packages .menu-icon{
+    color: #9b7a10;
 }
 
 /* No overflow here anymore */
@@ -282,4 +306,9 @@ html {
 .pack button{
   margin-top: 10px;
 }
+
+.head{ 
+  font-size: 50px; 
+  color: #9b7a10;
+} 
 }

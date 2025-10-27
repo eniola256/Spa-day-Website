@@ -22,7 +22,7 @@ const toggleCard = (id) => {
 <div className="packages">
       <NavBar />
       <div className="packages-main">
-        <h3>Our Packages</h3>
+        <h3 className="head">Our Packages</h3>
         <div className="all-pack">
 
   {/* ==================== Diamond ==================== */}
@@ -60,6 +60,7 @@ const toggleCard = (id) => {
                   <h3>Royal Escape Bundle</h3>
                   <p>Diamond</p>
                 </div>
+                <div className="pack-price">$$</div>
               </div>
             </div>
 
@@ -96,6 +97,7 @@ const toggleCard = (id) => {
                   <h3>Royal Escape Bundle</h3>
                   <p>Diamond</p>
                 </div>
+                <div className="pack-price">$$</div>
               </div>
             </div>
 
@@ -131,6 +133,7 @@ const toggleCard = (id) => {
                   <h3>Royal Escape Bundle</h3>
                   <p>Diamond</p>
                 </div>
+                <div className="pack-price">$$</div>
               </div>
             </div>
           </div>
@@ -168,6 +171,7 @@ const toggleCard = (id) => {
           <h3>Glow Bundle</h3>
           <p>Gold</p>
         </div>
+        <div className="pack-price">$$</div>
       </div>
     </div>
 
@@ -201,6 +205,7 @@ const toggleCard = (id) => {
           <h3>Glow Bundle</h3>
           <p>Gold</p>
         </div>
+        <div className="pack-price">$$</div>
       </div>
     </div>
 
@@ -235,6 +240,7 @@ const toggleCard = (id) => {
           <h3>Relaxation Bundle</h3>
           <p>Gold</p>
         </div>
+        <div className="pack-price">$$</div>
       </div>
     </div>
   </div>
@@ -272,6 +278,7 @@ const toggleCard = (id) => {
           <h3>Serenity Bundle</h3>
           <p>Platinum</p>
         </div>
+        <div className="pack-price">$$</div>
       </div>
     </div>
 
@@ -338,6 +345,7 @@ const toggleCard = (id) => {
           <h3>Renewal Bundle</h3>
           <p>Platinum</p>
         </div>
+        <div className="pack-price">$$</div>
       </div>
     </div>
   </div>
@@ -383,6 +391,7 @@ const toggleCard = (id) => {
             <h3>Royal Escape Bundle</h3>
             <p>Diamond</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -414,6 +423,7 @@ const toggleCard = (id) => {
             <h3>Royal Escape Bundle</h3>
             <p>Diamond</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -445,6 +455,7 @@ const toggleCard = (id) => {
             <h3>Royal Escape Bundle</h3>
             <p>Diamond</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -486,6 +497,7 @@ const toggleCard = (id) => {
             <h3>Glow Bundle</h3>
             <p>Gold</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -515,6 +527,7 @@ const toggleCard = (id) => {
             <h3>Glow Bundle</h3>
             <p>Gold</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -545,6 +558,7 @@ const toggleCard = (id) => {
             <h3>Relaxation Bundle</h3>
             <p>Gold</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -586,6 +600,7 @@ const toggleCard = (id) => {
             <h3>Serenity Bundle</h3>
             <p>Platinum</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -615,6 +630,7 @@ const toggleCard = (id) => {
             <h3>Indulgence Bundle</h3>
             <p>Platinum</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 
@@ -644,6 +660,7 @@ const toggleCard = (id) => {
             <h3>Renewal Bundle</h3>
             <p>Platinum</p>
           </div>
+          <div className="pack-price">$$</div>
         </div>
       </div>
 

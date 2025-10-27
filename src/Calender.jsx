@@ -35,21 +35,46 @@ function Calender() {
       for (let i = daysToShow; i > 0; i--) {
         const text = lastOfPrevMonth.getDate() - i + 1;
         const btn = document.createElement("button");
+        btn.type = "button"; 
         btn.textContent = text;
         btn.disabled = true;
         datesEL.appendChild(btn);
       }
 
       const lastOfMonth = new Date(year, month + 1, 0);
-      for (let i = 1; i <= lastOfMonth.getDate(); i++) {
-        const btn = document.createElement("button");
-        btn.textContent = i;
-        btn.addEventListener("click", () => {
-          selectedDate = new Date(year, month, i);
-        });
-        datesEL.appendChild(btn);
-      }
-    };
+for (let i = 1; i <= lastOfMonth.getDate(); i++) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.textContent = i;
+
+  const thisDate = new Date(year, month, i);
+
+  // Highlight today
+  const today = new Date();
+  if (
+    thisDate.getDate() === today.getDate() &&
+    thisDate.getMonth() === today.getMonth() &&
+    thisDate.getFullYear() === today.getFullYear()
+  ) {
+    btn.classList.add("today");
+  }
+
+  // Highlight selected date
+  if (
+    thisDate.getDate() === selectedDate.getDate() &&
+    thisDate.getMonth() === selectedDate.getMonth() &&
+    thisDate.getFullYear() === selectedDate.getFullYear()
+  ) {
+    btn.classList.add("selected");
+  }
+
+  btn.addEventListener("click", () => {
+    selectedDate = thisDate;
+    displayDates(); // ✅ rerender to update highlight
+  });
+
+  datesEL.appendChild(btn);
+}}
 
     // Event listeners
     dateInput.addEventListener("click", () => (datePicker.hidden = false));
@@ -57,6 +82,7 @@ function Calender() {
     applyBtn.addEventListener("click", () => {
       dateInput.value = selectedDate.toLocaleDateString();
       datePicker.hidden = true;
+      applyBtn.type = "button";
     });
 
     nextBtn.addEventListener("click", () => {
@@ -96,7 +122,7 @@ function Calender() {
     <div ref={containerRef}>
       <div className="book-date">
         <div className="date-picker-container">
-          <input type="text" className="date-input" placeholder="Select date" />
+          <input type="text" name="date" className="date-input" placeholder="Select date" readOnly />
           <div className="date-picker" >
             <div className="date-picker-header">
               <button className="prev">Prev</button>
@@ -134,7 +160,7 @@ function Calender() {
 
             <div className="date-picker-footer">
               <button className="cancel">Cancel</button>
-              <button className="apply">Apply</button>
+              <button type="button" className="apply">Apply</button>
             </div>
           </div>
         </div>
